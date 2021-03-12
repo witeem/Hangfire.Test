@@ -21,6 +21,15 @@
 > Microsoft.VisualStudio.Web.BrowserLink
 
 
+##### 在appsettings.json配置文件加入Redis链接
+
+```Json
+"ConnectionStrings": {
+    "Redis": "127.0.0.1:6379,abortConnect=false,connectRetry=3,connectTimeout=3000,defaultDatabase=1,syncTimeout=3000,version=3.2.1,responseTimeout=3000"
+  },
+```
+
+
 
 ##### 在Startup.cs注入服务添加请求处理管道：
 
